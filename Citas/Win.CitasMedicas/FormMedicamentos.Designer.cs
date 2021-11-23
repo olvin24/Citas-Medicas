@@ -67,6 +67,8 @@
             this.categoriasBLBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tiposBLBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.categoriaIdComboBox = new System.Windows.Forms.ComboBox();
+            this.button3 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             activoLabel = new System.Windows.Forms.Label();
             descripcionLabel = new System.Windows.Forms.Label();
             existenciaLabel = new System.Windows.Forms.Label();
@@ -87,63 +89,70 @@
             // activoLabel
             // 
             activoLabel.AutoSize = true;
-            activoLabel.Location = new System.Drawing.Point(43, 224);
+            activoLabel.Location = new System.Drawing.Point(57, 363);
+            activoLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             activoLabel.Name = "activoLabel";
-            activoLabel.Size = new System.Drawing.Size(40, 13);
+            activoLabel.Size = new System.Drawing.Size(50, 17);
             activoLabel.TabIndex = 1;
             activoLabel.Text = "Activo:";
             // 
             // descripcionLabel
             // 
             descripcionLabel.AutoSize = true;
-            descripcionLabel.Location = new System.Drawing.Point(43, 90);
+            descripcionLabel.Location = new System.Drawing.Point(57, 198);
+            descripcionLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             descripcionLabel.Name = "descripcionLabel";
-            descripcionLabel.Size = new System.Drawing.Size(66, 13);
+            descripcionLabel.Size = new System.Drawing.Size(86, 17);
             descripcionLabel.TabIndex = 3;
             descripcionLabel.Text = "Descripcion:";
             // 
             // existenciaLabel
             // 
             existenciaLabel.AutoSize = true;
-            existenciaLabel.Location = new System.Drawing.Point(43, 196);
+            existenciaLabel.Location = new System.Drawing.Point(57, 328);
+            existenciaLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             existenciaLabel.Name = "existenciaLabel";
-            existenciaLabel.Size = new System.Drawing.Size(58, 13);
+            existenciaLabel.Size = new System.Drawing.Size(75, 17);
             existenciaLabel.TabIndex = 5;
             existenciaLabel.Text = "Existencia:";
             // 
             // idLabel
             // 
             idLabel.AutoSize = true;
-            idLabel.Location = new System.Drawing.Point(43, 64);
+            idLabel.Location = new System.Drawing.Point(57, 166);
+            idLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             idLabel.Name = "idLabel";
-            idLabel.Size = new System.Drawing.Size(19, 13);
+            idLabel.Size = new System.Drawing.Size(23, 17);
             idLabel.TabIndex = 7;
             idLabel.Text = "Id:";
             // 
             // precioLabel
             // 
             precioLabel.AutoSize = true;
-            precioLabel.Location = new System.Drawing.Point(43, 170);
+            precioLabel.Location = new System.Drawing.Point(57, 296);
+            precioLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             precioLabel.Name = "precioLabel";
-            precioLabel.Size = new System.Drawing.Size(40, 13);
+            precioLabel.Size = new System.Drawing.Size(52, 17);
             precioLabel.TabIndex = 9;
             precioLabel.Text = "Precio:";
             // 
             // tipoIdLabel
             // 
             tipoIdLabel.AutoSize = true;
-            tipoIdLabel.Location = new System.Drawing.Point(43, 116);
+            tipoIdLabel.Location = new System.Drawing.Point(57, 230);
+            tipoIdLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             tipoIdLabel.Name = "tipoIdLabel";
-            tipoIdLabel.Size = new System.Drawing.Size(31, 13);
+            tipoIdLabel.Size = new System.Drawing.Size(40, 17);
             tipoIdLabel.TabIndex = 16;
             tipoIdLabel.Text = "Tipo:";
             // 
             // categoriaIdLabel
             // 
             categoriaIdLabel.AutoSize = true;
-            categoriaIdLabel.Location = new System.Drawing.Point(42, 143);
+            categoriaIdLabel.Location = new System.Drawing.Point(56, 263);
+            categoriaIdLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             categoriaIdLabel.Name = "categoriaIdLabel";
-            categoriaIdLabel.Size = new System.Drawing.Size(55, 13);
+            categoriaIdLabel.Size = new System.Drawing.Size(73, 17);
             categoriaIdLabel.TabIndex = 17;
             categoriaIdLabel.Text = "Categoria:";
             // 
@@ -175,7 +184,7 @@
             this.listaMedicamentosBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.listaMedicamentosBindingNavigator.Name = "listaMedicamentosBindingNavigator";
             this.listaMedicamentosBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.listaMedicamentosBindingNavigator.Size = new System.Drawing.Size(686, 27);
+            this.listaMedicamentosBindingNavigator.Size = new System.Drawing.Size(915, 27);
             this.listaMedicamentosBindingNavigator.TabIndex = 0;
             this.listaMedicamentosBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -186,7 +195,7 @@
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(37, 24);
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(48, 24);
             this.bindingNavigatorCountItem.Text = "de {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Número total de elementos";
             // 
@@ -218,7 +227,7 @@
             this.bindingNavigatorPositionItem.AccessibleName = "Posición";
             this.bindingNavigatorPositionItem.AutoSize = false;
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
+            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(65, 27);
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Posición actual";
             // 
@@ -285,7 +294,7 @@
             this.toolStripButtonCancelar.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonCancelar.Image")));
             this.toolStripButtonCancelar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButtonCancelar.Name = "toolStripButtonCancelar";
-            this.toolStripButtonCancelar.Size = new System.Drawing.Size(57, 24);
+            this.toolStripButtonCancelar.Size = new System.Drawing.Size(70, 24);
             this.toolStripButtonCancelar.Text = "Cancelar";
             this.toolStripButtonCancelar.Visible = false;
             this.toolStripButtonCancelar.Click += new System.EventHandler(this.toolStripButtonCancelar_Click);
@@ -293,9 +302,10 @@
             // activoCheckBox
             // 
             this.activoCheckBox.DataBindings.Add(new System.Windows.Forms.Binding("CheckState", this.listaMedicamentosBindingSource, "Activo", true));
-            this.activoCheckBox.Location = new System.Drawing.Point(115, 219);
+            this.activoCheckBox.Location = new System.Drawing.Point(153, 357);
+            this.activoCheckBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.activoCheckBox.Name = "activoCheckBox";
-            this.activoCheckBox.Size = new System.Drawing.Size(292, 24);
+            this.activoCheckBox.Size = new System.Drawing.Size(389, 30);
             this.activoCheckBox.TabIndex = 2;
             this.activoCheckBox.Text = " ";
             this.activoCheckBox.UseVisualStyleBackColor = true;
@@ -303,52 +313,58 @@
             // descripcionTextBox
             // 
             this.descripcionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.listaMedicamentosBindingSource, "Descripcion", true));
-            this.descripcionTextBox.Location = new System.Drawing.Point(115, 87);
+            this.descripcionTextBox.Location = new System.Drawing.Point(153, 194);
+            this.descripcionTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.descripcionTextBox.Name = "descripcionTextBox";
-            this.descripcionTextBox.Size = new System.Drawing.Size(292, 20);
+            this.descripcionTextBox.Size = new System.Drawing.Size(388, 22);
             this.descripcionTextBox.TabIndex = 4;
             // 
             // existenciaTextBox
             // 
             this.existenciaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.listaMedicamentosBindingSource, "Existencia", true));
-            this.existenciaTextBox.Location = new System.Drawing.Point(115, 193);
+            this.existenciaTextBox.Location = new System.Drawing.Point(153, 325);
+            this.existenciaTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.existenciaTextBox.Name = "existenciaTextBox";
-            this.existenciaTextBox.Size = new System.Drawing.Size(292, 20);
+            this.existenciaTextBox.Size = new System.Drawing.Size(388, 22);
             this.existenciaTextBox.TabIndex = 6;
             // 
             // idTextBox
             // 
             this.idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.listaMedicamentosBindingSource, "Id", true));
-            this.idTextBox.Location = new System.Drawing.Point(115, 61);
+            this.idTextBox.Location = new System.Drawing.Point(153, 162);
+            this.idTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.idTextBox.Name = "idTextBox";
             this.idTextBox.ReadOnly = true;
-            this.idTextBox.Size = new System.Drawing.Size(292, 20);
+            this.idTextBox.Size = new System.Drawing.Size(388, 22);
             this.idTextBox.TabIndex = 8;
             // 
             // precioTextBox
             // 
             this.precioTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.listaMedicamentosBindingSource, "Precio", true));
-            this.precioTextBox.Location = new System.Drawing.Point(115, 167);
+            this.precioTextBox.Location = new System.Drawing.Point(153, 293);
+            this.precioTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.precioTextBox.Name = "precioTextBox";
-            this.precioTextBox.Size = new System.Drawing.Size(292, 20);
+            this.precioTextBox.Size = new System.Drawing.Size(388, 22);
             this.precioTextBox.TabIndex = 10;
             // 
             // fotoPictureBox
             // 
             this.fotoPictureBox.BackColor = System.Drawing.Color.Gainsboro;
             this.fotoPictureBox.DataBindings.Add(new System.Windows.Forms.Binding("Image", this.listaMedicamentosBindingSource, "Foto", true, System.Windows.Forms.DataSourceUpdateMode.Never));
-            this.fotoPictureBox.Location = new System.Drawing.Point(434, 51);
+            this.fotoPictureBox.Location = new System.Drawing.Point(579, 150);
+            this.fotoPictureBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.fotoPictureBox.Name = "fotoPictureBox";
-            this.fotoPictureBox.Size = new System.Drawing.Size(213, 202);
+            this.fotoPictureBox.Size = new System.Drawing.Size(284, 249);
             this.fotoPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.fotoPictureBox.TabIndex = 12;
             this.fotoPictureBox.TabStop = false;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(434, 268);
+            this.button1.Location = new System.Drawing.Point(579, 417);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(90, 23);
+            this.button1.Size = new System.Drawing.Size(120, 28);
             this.button1.TabIndex = 13;
             this.button1.Text = "Agregar Foto";
             this.button1.UseVisualStyleBackColor = true;
@@ -356,9 +372,10 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(562, 268);
+            this.button2.Location = new System.Drawing.Point(749, 417);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(85, 23);
+            this.button2.Size = new System.Drawing.Size(113, 28);
             this.button2.TabIndex = 14;
             this.button2.Text = "Remover Foto";
             this.button2.UseVisualStyleBackColor = true;
@@ -384,9 +401,10 @@
             this.tipoIdComboBox.DisplayMember = "Descripcion";
             this.tipoIdComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.tipoIdComboBox.FormattingEnabled = true;
-            this.tipoIdComboBox.Location = new System.Drawing.Point(115, 113);
+            this.tipoIdComboBox.Location = new System.Drawing.Point(153, 226);
+            this.tipoIdComboBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tipoIdComboBox.Name = "tipoIdComboBox";
-            this.tipoIdComboBox.Size = new System.Drawing.Size(292, 21);
+            this.tipoIdComboBox.Size = new System.Drawing.Size(388, 24);
             this.tipoIdComboBox.TabIndex = 17;
             this.tipoIdComboBox.ValueMember = "Id";
             // 
@@ -405,17 +423,37 @@
             this.categoriaIdComboBox.DisplayMember = "Descripcion";
             this.categoriaIdComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.categoriaIdComboBox.FormattingEnabled = true;
-            this.categoriaIdComboBox.Location = new System.Drawing.Point(115, 140);
+            this.categoriaIdComboBox.Location = new System.Drawing.Point(153, 259);
+            this.categoriaIdComboBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.categoriaIdComboBox.Name = "categoriaIdComboBox";
-            this.categoriaIdComboBox.Size = new System.Drawing.Size(292, 21);
+            this.categoriaIdComboBox.Size = new System.Drawing.Size(388, 24);
             this.categoriaIdComboBox.TabIndex = 18;
             this.categoriaIdComboBox.ValueMember = "Id";
             // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(749, 65);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(113, 25);
+            this.button3.TabIndex = 19;
+            this.button3.Text = "Buscar";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(579, 68);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(154, 22);
+            this.textBox1.TabIndex = 20;
+            // 
             // FormMedicamentos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(686, 322);
+            this.ClientSize = new System.Drawing.Size(915, 526);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.button3);
             this.Controls.Add(categoriaIdLabel);
             this.Controls.Add(this.categoriaIdComboBox);
             this.Controls.Add(tipoIdLabel);
@@ -434,6 +472,7 @@
             this.Controls.Add(precioLabel);
             this.Controls.Add(this.precioTextBox);
             this.Controls.Add(this.listaMedicamentosBindingNavigator);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormMedicamentos";
             this.Text = "Buscar Medicamentos";
             this.Load += new System.EventHandler(this.FormMedicamentos_Load);
@@ -483,5 +522,7 @@
         private System.Windows.Forms.BindingSource categoriasBLBindingSource;
         private System.Windows.Forms.BindingSource tiposBLBindingSource;
         private System.Windows.Forms.ComboBox categoriaIdComboBox;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

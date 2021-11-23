@@ -27,6 +27,13 @@ namespace BL.Citas
             return ListaMedicamentos;
         }
 
+        public BindingList<Medicamento> ObtenerMedicamentos(string buscar)
+        {
+            
+            var resultado = _contexto.Medicamentos.Where(p => p.Descripcion.ToLower().Contains(buscar.ToLower()));
+            
+            return new BindingList<Medicamento>(resultado.ToList());
+        }
         // Agregando nuevo metodo para cancelar.
         public void CancelarCambios()
         {

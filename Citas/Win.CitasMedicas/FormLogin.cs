@@ -34,16 +34,23 @@ namespace Win.CitasMedicas
 
         private void button1_Click(object sender, EventArgs e)
         {
+            Login();
+        }
+
+        private void Login()
+        {
             string Usuario;
             string Contraseña;
 
             Usuario = textBox1.Text;
             Contraseña = textBox2.Text;
 
-           var resultado = _seguridad.Autorizar(Usuario, Contraseña);
+            var resultado = _seguridad.Autorizar(Usuario, Contraseña);
 
-            if (resultado == true)
+            if (resultado != null)
             {
+                Utilidades.NombreUsuario = resultado.Nombre;
+
                 this.Close();
             }
             else
@@ -79,6 +86,22 @@ namespace Win.CitasMedicas
         private void pictureBox1_Click_1(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter && textBox1.Text != "")
+            {
+                textBox2.Focus();
+            }
+        }
+
+        private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter && textBox1.Text != "" && textBox2.Text != "" )
+            {
+                Login();
+            }
         }
     }
 }

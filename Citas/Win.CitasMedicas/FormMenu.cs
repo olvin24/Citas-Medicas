@@ -40,6 +40,8 @@ namespace Win.CitasMedicas
         {
             var form1 = new Form1();
             form1.ShowDialog();
+
+            toolStripStatusLabel1.Text = "Usuario: " + Utilidades.NombreUsuario;
         }
 
         private void agendarCitaToolStripMenuItem_Click(object sender, EventArgs e)
